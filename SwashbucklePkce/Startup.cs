@@ -55,7 +55,6 @@ namespace SwashbucklePkce
             {
                 setup.SwaggerEndpoint($"/swagger/v1/swagger.json", "Version 1.0");
                 setup.OAuthClientId(appSettings.Security.Jwt.ClientId);
-                setup.OAuthClientSecret(appSettings.Security.Jwt.ClientSecret);
                 setup.OAuthAppName("Weather API");
                 setup.OAuthScopeSeparator(" ");
                 setup.OAuthUsePkce();
